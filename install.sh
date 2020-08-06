@@ -7,11 +7,11 @@ BIN=$PREFIX/bin/manager
 pkg install php
 
 # Copy manager.php to ../index.php
-cp manager.php ../index.php
+cp manager.php ../../index.php
 
 # Set up alias
 cat > $BIN <<EOF
-cd ~
+cd ~/..
 php -S $ADDR &
 xdg-open http://$ADDR
 wait
