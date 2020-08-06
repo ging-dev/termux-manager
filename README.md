@@ -1,7 +1,5 @@
 # Termux Manager
-File manager for Termux (Android)
 ![Demo](https://i.imgur.com/mK1LeIu.png)
-
 ## Install
 ```
 cd ~
