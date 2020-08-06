@@ -1,17 +1,15 @@
 # >_ Copyright by Gingdev 2020
 
+ROOT=/data/data/com.termux/files
 ADDR=127.0.0.1:9876
 BIN=$PREFIX/bin/manager
 
-# Install PHP package
-pkg install php
-
-# Copy manager.php to ../index.php
-cp manager.php ../../index.php
+# Download script file
+wget https://raw.githubusercontent.com/ging-dev/termux-manager/master/manager.php -O $ROOT/index.php
 
 # Set up alias
 cat > $BIN <<EOF
-cd ~/..
+cd $ROOT
 php -S $ADDR &
 xdg-open http://$ADDR
 wait

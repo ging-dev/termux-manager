@@ -3,8 +3,8 @@
 ## Install
 ```
 cd ~
-git clone https://github.com/ging-dev/termux-manager
-cd termux-manager
+pkg install wget php
+wget https://raw.githubusercontent.com/ging-dev/termux-manager/master/install.sh
 bash install.sh
 ```
 You can delete directory `termux-manager` after installation.
